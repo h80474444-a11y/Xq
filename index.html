@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tariq Aziz | Professional Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        :root {
+            --primary-green: #1a5d1a;
+            --accent-gold: #c5a059;
+            --text-dark: #2d3436;
+            --bg-light: #f9fbf9;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* Top Header & Logos */
+        .logo-bar {
+            background: var(--white);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo-bar img {
+            height: 80px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-green);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Cover Photo Section */
+        .cover-photo-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 5%;
+        }
+
+        .cover-photo {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: block;
+        }
+
+        /* Hero / Headline Text */
+        .hero-text {
+            text-align: center;
+            padding: 40px 10% 20px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--primary-green);
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 400;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 10%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-gold);
+            padding-left: 20px;
+        }
+
+        /* Introduction */
+        .intro-text {
+            font-size: 1.1rem;
+            color: #444;
+            columns: 2;
+            column-gap: 50px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Tables & Lists */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+
+        .data-table th {
+            background: var(--primary-green);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .data-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .article-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 4px solid var(--accent-gold);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .intro-text { columns: 1; }
+            .cover-photo { height: 250px; }
+            nav ul { gap: 10px; flex-wrap: wrap; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-bar animate__animated animate__fadeIn">
+        <img src="1000071940.png" alt="UAF Logo"> 
+        <img src="1000071939.png" alt="INI Logo"> 
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#supervision">Supervision</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cover-photo-container animate__animated animate__zoomIn">
+        <img src="1000071938.jpg" alt="Dr. Tariq Aziz Cover Photo" class="cover-photo">
+    </div>
+
+    <div class="hero-text">
+        <h1>Dr. Tariq Aziz</h1>
+        <p>Regional Director (South Asia) | International Nitrogen Initiative</p>
+    </div>
+
+    <section id="introduction" class="animate__animated animate__fadeInUp">
+        <h2 class="section-title">Introduction</h2>
+        <div class="intro-text">
+            <p>Dr. Aziz serves as the Regional Director for South Asia at the International Nitrogen Initiative (INI) and holds the position of Associate Professor of Soil Science at the University of Agriculture, Faisalabad (UAF), Pakistan. He is the lead partner from Pakistan in the global project "South Asia Nitrogen Hub" and is also involved in the UNEP/GEF funded project “International Nitrogen Management Systems (INMS)”.</p>
+            <p>Dr. Aziz has published more than 120 research articles, and produced over 48 M.Sc. and 5 Ph.D. students in the discipline of Soil Science. His research interests focus on improving fertilizer use efficiency, nutrient recycling, and addressing nutrient pollution on a global scale.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Organization</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Principal, Sub-Campus Depalpur</td><td>University of Agriculture, Faisalabad</td><td>2018 - 2023</td></tr>
+                <tr><td>Associate Professor</td><td>University of Agriculture, Faisalabad</td><td>2013 - Present</td></tr>
+                <tr><td>Adjunct Senior Lecturer</td><td>University of Western Australia</td><td>2014 - Present</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="supervision">
+        <h2 class="section-title">Research Supervision</h2>
+        <div class="article-grid">
+            <div class="article-card" style="text-align: center;">
+                <h3>M.Sc. (Hons.)</h3>
+                <p style="font-size: 3rem; font-weight: 700; color: var(--primary-green);">48</p>
+                <p>Students Supervised</p>
+            </div>
+            <div class="article-card" style="text-align: center;">
+                <h3>Ph.D.</h3>
+                <p style="font-size: 3rem; font-weight: 700; color: var(--primary-green);">5</p>
+                <p>Students Supervised</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: #eee; border-radius: 15px; margin-bottom: 50px;">
+        <h2 class="section-title">Contact</h2>
+        <div style="padding: 20px;">
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> draziz@uaf.edu.pk</p>
+            <p><i class="fas fa-university"></i> <strong>Office:</strong> Institute of Soil & Environmental Sciences, UAF</p>
+            <p style="margin-top: 20px;">
+                <a href="https://orcid.org/0000-0002-4300-3813" target="_blank" style="color: var(--primary-green); font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-orcid"></i></a>
+                <a href="https://www.linkedin.com/in/tariq-aziz-44b95024/" target="_blank" style="color: var(--primary-green); font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+            </p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; background: #222; color: #777;">
+        <p>&copy; 2026 Dr. Tariq Aziz | Academic Profile</p>
+    </footer>
+
+</body>
+</html>
